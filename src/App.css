@@ -1,0 +1,21 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-logo.spinning {
+  animation: App-logo-spin infinite 20s linear;
+}
+.App-logo.stopped {
+  animation: none; /* Ensures the animation is stopped */
+  transform: rotate(0deg); /* Optionally reset the rotation */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
